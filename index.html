@@ -724,33 +724,36 @@
 
             <h3 style="text-align: center; margin-top: 70px;">Vous pouvez également nous contacter par mail : estairesvotrevillevotrevoix@gmail.com</h3>
             <h3 style="text-align: center; margin-top: 35px;">Ou par téléphone : 07 66 11 15 20</h3>
-            
+
             </div>
         </div>
-    </div>
 
-    <form action="https://formsubmit.co/estairesvotrevillevotrevoix@gmail.com" method="POST" style="max-width:500px;margin:0 auto;">
+      <form action="https://formsubmit.co/estairesvotrevillevotrevoix@gmail.com" method="POST" style="max-width:500px;margin:0 auto;">
     
     <!-- Empêcher la page FormSubmit après envoi -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_next" value="https://hugogsqr.github.io/estaires-votre-ville-votre-voix/#contact">
-        
-    <input type="hidden" name="_autoresponse" value="Merci de nous avoir contacté ! Votre message a bien été reçu par notre équipe. Nous reviendrons vers vous rapidement.">
+    
+    <!-- Réponse automatique -->
+    <input type="hidden" name="_autoresponse" value="Merci pour votre message ! Nous avons bien reçu votre demande et nous vous répondrons dans les plus brefs délais. L'équipe Estaires, Votre Ville, Votre Voix">
+    <input type="hidden" name="_subject" value="Nouveau message depuis le site de campagne">
 
     <label for="email">Votre email :</label><br>
-    <input type="email" id="email" name="_replyto" required           
-           style="width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:5px;"><br>
+    <input type="email" id="email" name="email" required
+        style="width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:5px;"><br>
 
     <label for="message">Votre message :</label><br>
     <textarea id="message" name="message" rows="5" required
-              style="width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:5px;"></textarea><br>
+            style="width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:5px;"></textarea><br>
 
     <button type="submit"
             style="padding:12px 20px;background:#1E5059;color:white;border:none;border-radius:5px;font-weight:600;cursor:pointer;">
         Envoyer
     </button>
 </form>
+    </div>
+    
 
     <footer>
         <p>&copy; 2025 Estaires, Votre Ville Votre Voix - Tous droits réservés</p>
