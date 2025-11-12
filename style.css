@@ -416,3 +416,43 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+
+
+/* Menu supérieur */
+
+.navbar {
+  background-color: #325E65; /* ton fond bleu/vert actuel */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Effet au survol */
+.nav-link:hover {
+  background-color: white;
+  color: #325E65;
+}
+
+/* Onglet actif */
+.nav-link.active {
+  background-color: white;
+  color: #325E65;
+  font-weight: 600;
+}
