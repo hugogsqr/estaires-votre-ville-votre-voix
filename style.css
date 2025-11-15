@@ -580,3 +580,61 @@ footer {
 }
 */
 
+/*Photo Justine*/
+.redimension-member-photo img {
+    object-fit: cover;
+    object-position: 50% 20%; /* ← remonte ou descend la photo */
+    width: 100%;
+    object-fit: cover; /* L'image remplit tout l'espace */
+}
+
+
+/* Conteneur du formulaire */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style des champs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    font-family: inherit;
+    background: #f8f8f8;
+    transition: all 0.25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2f6b75;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(47,107,117,0.2);
+}
+
+/* Bouton */
+.contact-form button {
+    padding: 15px;
+    background: #2f6b75;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #244f58;
+}
