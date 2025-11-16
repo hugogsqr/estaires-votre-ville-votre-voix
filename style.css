@@ -10,6 +10,7 @@ body {
     color: #2c3e50;
 }
 
+/* HEADER */
 header {
     background: linear-gradient(135deg, #1E5059 0%, #2a6f7a 100%);
     color: white;
@@ -37,6 +38,23 @@ header {
     gap: 0.5rem;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-text {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.logo-text:hover {
+    opacity: 0.9;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -55,7 +73,24 @@ nav a:hover {
     opacity: 0.8;
 }
 
+.nav-link {
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.nav-link:hover {
+    background-color: white;
+    color: #325E65;
+}
+
+.nav-link.active {
+    background-color: white;
+    color: #325E65;
+    font-weight: 600;
+}
+
+/* HERO */
 .hero {
     background: linear-gradient(rgba(30, 80, 89, 0.8), rgba(42, 111, 122, 0.8)), 
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231E5059" width="1200" height="600"/><path fill="%232a6f7a" d="M0 400 Q300 350 600 400 T1200 400 V600 H0 Z"/><circle fill="%2338899a" cx="200" cy="100" r="80" opacity="0.3"/><circle fill="%2338899a" cx="900" cy="150" r="120" opacity="0.3"/></svg>');
@@ -63,7 +98,7 @@ nav a:hover {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 8rem 2rem;
+    padding: 3rem 0rem;
 }
 
 .hero h1 {
@@ -78,6 +113,31 @@ nav a:hover {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
+.hero .container {
+    padding: 1rem 2rem 0.5rem;
+    margin-top: 5rem;
+}
+
+.hero .message-bubble {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.photo_tete_liste img {
+    height: 300px !important;
+    width: 300px !important;
+    border-radius: 50% !important;
+    object-fit: cover;
+}
+
+.image_liste img {
+    height: auto !important;
+    max-width: 100%;
+    max-height: 450px;
+    margin-top: 30px;
+}
+
+/* BUTTONS */
 .cta-button {
     display: inline-block;
     background: white;
@@ -95,12 +155,14 @@ nav a:hover {
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
+/* CONTAINER */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
 }
 
+/* VALUES CARDS */
 .values {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -121,16 +183,17 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-.value-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
 .value-card h3 {
     color: #1E5059;
     margin-bottom: 1rem;
 }
 
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* TEAM MEMBERS */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -143,7 +206,7 @@ nav a:hover {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border: 1px solid #1E5059; /* ← Bordure fine ajoutée ici */
+    border: 1px solid #1E5059;
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
@@ -156,8 +219,8 @@ nav a:hover {
 
 .member-photo {
     width: 100%;
-    height: 300px; /* Hauteur fixe pour toutes les photos */
-    background: #f0f0f0; /* Fond gris clair si l'image ne charge pas */
+    height: 300px;
+    background: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,14 +230,14 @@ nav a:hover {
 .member-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* L'image remplit tout l'espace */
+    object-fit: cover;
 }
 
 .member-info {
     padding: 1rem;
     text-align: center;
-    background: white; /* Fond blanc */
-    min-height: 70px; /* Hauteur minimale pour uniformiser */
+    background: white;
+    min-height: 70px;
 }
 
 .member-info h3 {
@@ -184,16 +247,11 @@ nav a:hover {
 }
 
 .member-info .role {
-    display: none; /* Cache le rôle */
+    display: none;
 }
 
 .member-info p {
-    display: none; /* Cache la description */
-}
-
-/* Ajuste aussi les leaders */
-.team-leaders .team-member {
-    height: auto; /* Les leaders peuvent avoir leur propre hauteur */
+    display: none;
 }
 
 .team-leaders {
@@ -203,6 +261,12 @@ nav a:hover {
     justify-content: center;
     margin-bottom: 3rem;
 }
+
+.team-leaders .team-member {
+    height: auto;
+}
+
+/* PROGRAMME */
 .program-section {
     margin-bottom: 3rem;
 }
@@ -232,6 +296,193 @@ nav a:hover {
     margin-bottom: 0.8rem;
 }
 
+/* VIDEOS */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* GALERIE */
+.galerie-section {
+    margin-bottom: 50px;
+}
+
+.galerie-section h2 {
+    font-size: 1.7rem;
+    margin: 40px 0 20px;
+    text-align: center;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0 20px 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+}
+
+.gallery img.small {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery.small-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.gallery.small-gallery img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.gallery.mid-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.gallery.mid-gallery img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Photo Justine*/
+.redimension-member-photo img {
+    object-fit: cover;
+    object-position: 50% 20%;
+    width: 100%;
+}
+
+.redimension-member-photo2 img {
+    object-fit: cover;
+    object-position: 0% 10%;
+    width: 100%;
+}
+
+.redimension-member-photo-emilie-C img {
+    object-fit: cover;
+    object-position: 0% 75%;
+    width: 100%;
+}
+
+.redimension-member-photo-bruno img {
+    object-fit: cover;
+    object-position: 0% 30%;
+    width: 100%;
+}
+
+.redimension-member-photo-valerie img {
+    object-fit: cover;
+    object-position: 0% 30%;
+    width: 100%;
+}
+
+/* FORMULAIRE DE CONTACT */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    font-family: inherit;
+    background: #f8f8f8;
+    transition: all 0.25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2f6b75;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(47,107,117,0.2);
+}
+
+.contact-form button {
+    padding: 15px;
+    background: #2f6b75;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #244f58;
+}
+
+/* MESSAGE BUBBLE */
+.message-bubble {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem 2.5rem;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+/* FOOTER */
 footer {
     background: #1E5059;
     color: white;
@@ -240,9 +491,14 @@ footer {
     margin-top: 4rem;
 }
 
+/* RESPONSIVE - TABLETTES */
 @media (max-width: 768px) {
     body {
         font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 3rem 1rem;
     }
     
     .hero h1 {
@@ -251,10 +507,6 @@ footer {
     
     .hero p {
         font-size: 0.9rem;
-    }
-    
-    .hero {
-        padding: 3rem 1rem;
     }
     
     nav ul {
@@ -290,10 +542,7 @@ footer {
         gap: 1.5rem;
     }
     
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-    
+    .team-grid,
     .team-leaders {
         grid-template-columns: 1fr;
     }
@@ -305,19 +554,24 @@ footer {
         object-fit: cover;
     }
     
-    .image_liste img,
-    .photo_tete_liste img,
-    .logo_principal img {
+    .photo_tete_liste img {
+        height: 300px !important;
+        width: 300px !important;
+    }
+    
+    .image_liste img {
         height: auto !important;
         max-width: 100%;
-        max-height: 250px;
+        max-height: 600px;
+        margin-top: 30px;
     }
     
     .gallery.mid-gallery img {
         max-width: 100%;
         width: 100%;
-        height: auto; 
+        height: auto;
     }
+    
     .program-section h2 {
         font-size: 1.3rem;
     }
@@ -342,6 +596,12 @@ footer {
         font-size: 1.3rem;
     }
     
+    h2.responsive-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+    
     .cta-button {
         padding: 0.7rem 1.2rem;
         font-size: 0.85rem;
@@ -354,8 +614,15 @@ footer {
     .value-card p {
         font-size: 0.9rem;
     }
+    
+    .message-bubble {
+        padding: 1.5rem;
+        font-size: 1rem;
+        margin: 1.5rem 1rem;
+    }
 }
 
+/* RESPONSIVE - MOBILES */
 @media (max-width: 480px) {
     body {
         font-size: 0.85rem;
@@ -390,176 +657,6 @@ footer {
         font-size: 1.3rem !important;
     }
 }
-
-
-.logo a {
-    display: flex;              /* l'image et le texte restent sur la même ligne */
-    align-items: center;        /* centrage vertical parfait */
-    text-decoration: none;      /* pas de soulignement */
-    color: inherit;             /* garde la couleur blanche du header */
-}
-
-
-.logo-text {
-  text-decoration: none;  /* pas de soulignement */
-  color: inherit;         /* garde la même couleur que le reste du header */
-  font-weight: bold;      /* conserve le même rendu visuel */
-}
-
-.logo-text:hover {
-  opacity: 0.9;           /* petit effet au survol, optionnel */
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;            /* espace entre logo et texte */
-}
-
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem auto;
-    max-width: 1200px;
-}
-
-.video {
-    position: relative;
-    padding-bottom: 56.25%; /* Ratio 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/* Menu supérieur */
-
-.navbar {
-  background-color: #325E65; /* ton fond bleu/vert actuel */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 2rem;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Effet au survol */
-.nav-link:hover {
-  background-color: white;
-  color: #325E65;
-}
-
-/* Onglet actif */
-.nav-link.active {
-  background-color: white;
-  color: #325E65;
-  font-weight: 600;
-}
-
-
-
-/* Onglet Galerie*/
-
-/* Titres des sections */
-.galerie-section h2 {
-    font-size: 1.7rem;
-    margin: 40px 0 20px;
-    text-align: center;
-    color: #333;
-}
-
-/* Mise en page en grille */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 0 20px 40px;
-}
-
-/* Images de la galerie */
-.gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* Effet hover */
-.gallery img:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
-}
-
-/* Espacement entre les sections */
-.galerie-section {
-    margin-bottom: 50px;
-}
-
-.gallery img.small {
-    max-width: 80%;     /* ← réduire légèrement */
-    margin: 0 auto;     /* ← centrer l’image dans sa cellule */
-    display: block;     /* ← nécessaire pour centrer */
-}
-
-/* images verticales */
-
-.gallery.small-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.gallery.small-gallery img {
-    width: 250px;      /* ← taille fixe propre, tu peux ajuster */
-    height: auto;
-    object-fit: contain;
-}
-
-
-.gallery.mid-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.gallery.mid-gallery img {
-    width: 100%;      /* occupe toute la largeur du conteneur */
-    max-width: 750px; /* ne dépasse JAMAIS 750px */
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    justify-content: center;
-}
-
 
 /* CSS "Liste" --> Fond bleu + Description + Rôle. A remplacer de team-member à member-info p :
 .team-member {
@@ -600,69 +697,3 @@ footer {
     margin-bottom: 0.5rem;
 }
 */
-
-/*Photo Justine*/
-.redimension-member-photo img {
-    object-fit: cover;
-    object-position: 50% 20%; /* ← remonte ou descend la photo */
-    width: 100%;
-    object-fit: cover; /* L'image remplit tout l'espace */
-}
-
-.redimension-member-photo2 img {
-    object-fit: cover;
-    object-position: 0% 10%; /* ← remonte ou descend la photo */
-    width: 100%;
-    object-fit: cover; /* L'image remplit tout l'espace */
-}
-
-
-/* Conteneur du formulaire */
-.contact-form {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Style des champs */
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid #d9d9d9;
-    font-size: 16px;
-    font-family: inherit;
-    background: #f8f8f8;
-    transition: all 0.25s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #2f6b75;
-    background: #fff;
-    box-shadow: 0 0 0 3px rgba(47,107,117,0.2);
-}
-
-/* Bouton */
-.contact-form button {
-    padding: 15px;
-    background: #2f6b75;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.contact-form button:hover {
-    background: #244f58;
-}
