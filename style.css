@@ -539,6 +539,18 @@ footer {
 }
 
 
+.gallery.mid-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.gallery.mid-gallery img {
+    width: 750px;      /* ← taille fixe propre, tu peux ajuster */
+    height: auto;
+    object-fit: contain;
+}
+
 
 /* CSS "Liste" --> Fond bleu + Description + Rôle. A remplacer de team-member à member-info p :
 .team-member {
@@ -584,6 +596,13 @@ footer {
 .redimension-member-photo img {
     object-fit: cover;
     object-position: 50% 20%; /* ← remonte ou descend la photo */
+    width: 100%;
+    object-fit: cover; /* L'image remplit tout l'espace */
+}
+
+.redimension-member-photo2 img {
+    object-fit: cover;
+    object-position: 0% 10%; /* ← remonte ou descend la photo */
     width: 100%;
     object-fit: cover; /* L'image remplit tout l'espace */
 }
