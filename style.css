@@ -314,7 +314,9 @@ footer {
     }
     
     .gallery.mid-gallery img {
-        max-width: 100%; 
+        max-width: 100%;
+        width: 100%;
+        height: auto; 
     }
     .program-section h2 {
         font-size: 1.3rem;
