@@ -313,6 +313,9 @@ footer {
         max-height: 250px;
     }
     
+    .gallery.mid-gallery img {
+        max-width: 100%; 
+    }
     .program-section h2 {
         font-size: 1.3rem;
     }
@@ -546,9 +549,13 @@ footer {
 }
 
 .gallery.mid-gallery img {
-    width: 750px;      /* ← taille fixe propre, tu peux ajuster */
+    width: 100%;      /* occupe toute la largeur du conteneur */
+    max-width: 750px; /* ne dépasse JAMAIS 750px */
     height: auto;
     object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 
