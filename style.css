@@ -419,6 +419,12 @@ nav a:hover {
     width: 100%;
 }
 
+.redimension-member-photo-celine img {
+    object-fit: cover;
+    object-position: 0% 30%;
+    width: 100%;
+}
+
 /* FORMULAIRE DE CONTACT */
 .contact-form {
     max-width: 600px;
