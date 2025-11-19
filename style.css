@@ -425,6 +425,19 @@ nav a:hover {
     width: 100%;
 }
 
+.redimension-member-photo-jj img{
+    object-fit: cover;
+    object-position: 0% 60%;
+    width: 100%;
+}
+
+.redimension-member-photo-jerome img {
+    object-fit: cover;
+    object-position: 0% 40%;
+    width: 100%;
+}
+
+
 /* FORMULAIRE DE CONTACT */
 .contact-form {
     max-width: 600px;
