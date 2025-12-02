@@ -456,6 +456,13 @@ nav a:hover {
     width: 100%;
 }
 
+.redimension-member-photo-nathalie img{
+    object-fit: cover;
+    object-position: 0% 40%;
+    width: 100%;
+}
+
+
 /* FORMULAIRE DE CONTACT */
 .contact-form {
     max-width: 600px;
