@@ -409,7 +409,7 @@ nav a:hover {
 
 .redimension-member-photo-bruno img {
     object-fit: cover;
-    object-position: 0% 30%;
+    object-position: 0% 15%;
     width: 100%;
 }
 
@@ -444,6 +444,17 @@ nav a:hover {
 }
 
 
+.redimension-member-photo-greg img {
+    object-fit: cover;
+    object-position: 100% 100%;
+    width: 100%;
+}
+
+.redimension-member-photo-magali img{
+    object-fit: cover;
+    object-position: 0% 40%;
+    width: 100%;
+}
 
 /* FORMULAIRE DE CONTACT */
 .contact-form {
