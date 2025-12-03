@@ -462,6 +462,12 @@ nav a:hover {
     width: 100%;
 }
 
+.redimension-member-photo-laetitia img{
+    object-fit: cover;
+    object-position: 0% 100%;
+    width: 100%;
+}
+
 
 /* FORMULAIRE DE CONTACT */
 .contact-form {
