@@ -322,24 +322,23 @@ nav a:hover {
     height: 100%;
 }
 
-/*
-.video-accueil{
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
+.video-accueil {
+    max-width: 700px; /* Largeur maximale de la vidéo (ajustable) */
+    width: 100%; /* Prend toute la largeur disponible jusqu'au max-width */
+    margin: 30px auto; /* Centrage horizontal + espacement vertical */
+    aspect-ratio: 16 / 9; /* Maintient le ratio 16:9 automatiquement */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
 .video-accueil iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
 }
-*/
+
 
 /* GALERIE */
 .galerie-section {
@@ -707,6 +706,11 @@ footer {
     .value-card p {
         font-size: 0.9rem;
     }
+
+    .video-accueil {
+        max-width: 90%;
+        margin: 20px auto;
+    }
     
     /* Message bubble - Citation proportionnée */
     .message-bubble {
@@ -754,6 +758,10 @@ footer {
     
     h1 {
         font-size: 1.3rem !important;
+    }
+    .video-accueil {
+        max-width: 95%;
+        margin: 15px auto;
     }
 }
 
