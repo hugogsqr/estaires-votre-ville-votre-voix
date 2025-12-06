@@ -322,6 +322,25 @@ nav a:hover {
     height: 100%;
 }
 
+/*
+.video-accueil{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-accueil iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+*/
+
 /* GALERIE */
 .galerie-section {
     margin-bottom: 50px;
@@ -465,6 +484,12 @@ nav a:hover {
 .redimension-member-photo-laetitia img{
     object-fit: cover;
     object-position: 0% 100%;
+    width: 100%;
+}
+
+.redimension-member-photo-pascale img{
+    object-fit: cover;
+    object-position: 0% 37%;
     width: 100%;
 }
 
