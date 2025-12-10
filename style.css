@@ -515,6 +515,13 @@ nav a:hover {
     width: 100%;
 }
 
+.redimension-member-photo-claire img{
+    object-fit: cover;
+    object-position: 50% 40%;
+    width: 100%;
+}
+
+
 
 /* FORMULAIRE DE CONTACT */
 .contact-form {
