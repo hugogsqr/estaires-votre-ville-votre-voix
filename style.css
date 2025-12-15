@@ -521,6 +521,11 @@ nav a:hover {
     width: 100%;
 }
 
+.redimension-member-photo-enzo img{
+    object-fit: cover;
+    object-position: 0% 3%;
+    width: 100%;
+}
 
 
 /* FORMULAIRE DE CONTACT */
