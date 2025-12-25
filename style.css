@@ -527,6 +527,23 @@ nav a:hover {
     width: 100%;
 }
 
+.redimension-member-photo-florian img{
+    object-fit: cover;
+    object-position: 0% 19%;
+    width: 100%;
+}
+
+.redimension-member-photo-natalie-coll img{
+    object-fit: cover;
+    object-position: 0% 75%;
+    width: 100%;
+}
+
+.redimension-member-photo-laurent img{
+    object-fit: cover;
+    object-position: 0% 39%;
+    width: 100%;
+}
 
 /* FORMULAIRE DE CONTACT */
 .contact-form {
