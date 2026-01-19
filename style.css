@@ -314,6 +314,7 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+
 .video iframe {
     position: absolute;
     top: 0;
@@ -608,6 +609,38 @@ nav a:hover {
     position: relative;
 }
 
+
+/*bouton tract*/
+
+/* Bouton Tract - Version rectangulaire */
+.tract-button-alt {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    color: #1E5059;
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid white;
+}
+
+.tract-button-alt:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+    border-color: #38899a;
+}
+
+.pdf-icon {
+    width: 28px;
+    height: 28px;
+    fill: #1E5059;
+}
+
 /* FOOTER */
 footer {
     background: #1E5059;
@@ -616,6 +649,7 @@ footer {
     padding: 2rem;
     margin-top: 4rem;
 }
+
 
 /* RESPONSIVE - TABLETTES */
 @media (max-width: 768px) {
@@ -783,6 +817,16 @@ footer {
         width: 300px;
         max-width: 90%;
     }
+
+    .tract-button-alt {
+        padding: 16px 32px;
+        font-size: 0.95rem;
+    }
+    
+    .pdf-icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 /* RESPONSIVE - MOBILES */
@@ -832,6 +876,16 @@ footer {
     .gallery.medium-gallery img {
         width: 100%;
         max-width: 320px;
+    }
+
+    .tract-button-alt {
+        padding: 14px 28px;
+        font-size: 0.9rem;
+    }
+    
+    .pdf-icon {
+        width: 22px;
+        height: 22px;
     }
 }
 
