@@ -137,6 +137,8 @@ nav a:hover {
     margin-top: 30px;
 }
 
+
+
 /* BUTTONS */
 .cta-button {
     display: inline-block;
@@ -744,6 +746,11 @@ footer {
         margin-top: 20px;
     }
     
+    .gallery.mid-gallery {
+    flex-wrap: wrap;
+    gap: 15px;
+    }
+
     .gallery.mid-gallery img {
         max-width: 100%;
         width: 100%;
